@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inspire 2</title>
+    <link rel="icon" href="../../../Drone-X-Home/images/drone.png">
+    <link rel="stylesheet" href="../../../Drone-X-Home/css/index.css">
+
+</head>
+
+<body>
+  <nav>
+         <div class="nav-item-logo">
+           <a href="../../../Drone-X-Home/index.html"><img src="../../../Drone-X-Home/images/rsz_1logo2.png"></a>
+        </div>
+       <div class="nav-item">
+           <a href="../../../Drone-X-Productos/ConsumidoresV1.html">CONSUMO </a>
+        </div>
+        <div class="nav-item">
+           <a href="../../../Drone-X-Productos/EmpresaV1.html"> EMPRESA</a>
+        </div>
+        <div class="nav-item">
+            <a href="../../../Drone-X-Productos/ProfesionalesV1.html"> PROFESIONAL </a>
+        </div>
+              <div class="nav-item">
+            <a href="../../../Drone-X-Nosotros/Nosotros.html"> NOSOTROS </a>
+        </div>  
+         <div class="nav-item">
+            <a href="../../../Drone-X-Servicio-tecnico/index.html">SERVICIO TÉCNICO </a>
+        </div>  
+       <div class="nav-item-icon">
+            <div class="nav-item-element">
+               <a href="../../../Drone-X-Registro/RegistroV2.html">
+                <img src="../../../Drone-X-Home/images/usuario.png">
+               </a>
+            </div>
+            <div class="nav-item-element">
+                <a href="../../../Drone-X-Registro/RegistroV2.html">
+                <img src="../../../Drone-X-Home/images/supermercado.png">
+                </a>
+            </div>
+        </div>
+    </nav>   
+    <header>
+        <div class="cabecera-profesional1">
+            <div class="texto-cabecera-profesional1">
+                <h1>INSPIRE 2</h1>
+                <h3>TU INGENIO SIMPLIFICADO</h3>
+            </div>
+            <div class="texto-cabecera-2-profesional1">
+
+                El Inspire 2 toma todo lo bueno del Inspire 1 y lo mejora. Hemos mejorado el sistema de procesado de
+                imagen de CineCore 2.0 a CineCore 2.1, y ahora se puede grabar
+                vídeo en 6K en CinemaDNG/RAW y 5.2K en Apple ProRes si se utiliza una cámara Zenmuse X7.Un sistema de
+                procesado de imagen totalmente nuevo graba hasta en 5.2K
+                en Adobe CinemaDNG RAW, Apple ProRes y más. Va de 0 a 80 km/h (50 mph) en tan solo 5 segundos y consigue
+                una velocidad máxima de 94 km/h (58 mph), con una velocidad de descenso
+                máxima de 9 m/s con una agilidad y velocidad sin precedentes en una aeronave de su tamaño. El sistema de
+                batería dual prolonga el tiempo de vuelo
+                hasta un máximo de 27 minutos (con el X4S), mientras la tecnología de autocalentamiento le permite volar
+                incluso en entornos de baja temperatura.
+
+        </div>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade tam-fotos-profesional1">
+
+            <img src="../../../Drone-X-Home/images/images-producto-profesional/caracteristica-1.jpg">
+            <div class="text">
+                <h3>VOLAR CON LA PUNTA DE TUS DEDOS</h3>
+                En modo TapFly, tú sólo tienes que decidir qué foto quieres hacer, y Spark la hace por ti. Pulsa en la
+                pantalla de tu teléfono y Spark, utilizando tecnología visual, volará en la dirección en la que hallas
+                pulsado o en el punto exacto en el que lo hayas hecho mientras detecta los obstáculos. Toma una foto
+                tras otra con sólo mover los dedos.
+            </div>
+        </div>
+
+        <div class="mySlides fade tam-fotos-profesional1">
+
+            <img src="../../../Drone-X-Home/images/images-producto-profesional/caracteristica-2.jpg">
+            <div class="text">
+                <h3>CENTRADO EN EL OBJETIVO</h3>
+                Con ActiveTrack, Spark reconoce y sigue automáticamente objetos de diferentes formas y tamaños teniendo
+                en cuenta qué son y a qué velocidad se mueven. Esto hace que seguir un objetivo sea mucho más fácil y
+                fiable.
+            </div>
+        </div>
+
+        <div class="mySlides fade tam-fotos-profesional1">
+
+            <img src="../../../Drone-X-Home/images/images-producto-profesional/caracteristica-3.jpg">
+            <div class="text">
+                <h3>TUS MOMENTOS CAPTURADOS</h3>
+                El reconocimiento de gestos por aprendizaje profundo te permite hacer selfies con un sencillo movimiento
+                de mano. En el modo PalmControl, el Spark se controla con el movimiento de la mano.
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+
+    <div class="drone-inspire2">
+        <div class="texto-drone-inspire2 bajo-profesional1">
+            <h3>POTENCIA DE VUELO</h3><br>
+            El nuevo sistema de propulsión optimizado para mayor potencia consigue un rendimiento de vuelo mejorado. El
+            Inspire 2 vuela hasta a 94 km/h (58 mph) con una velocidad de descenso de hasta 9 m/s y de ascenso de hasta
+            6 m/s. Puede acelerar de 0 a 80 km/h en tan solo 5 s y vuela a un ángulo de posición máximo de 40º. Las dos
+            palancas de control se han ajustado para una mayor sensibilidad, haciendo más sencillas las maniobras más
+            delicadas. Una mayor potencia también le permite al Inspire 2 volar en condiciones extremas, como en vuelos
+            a más de 2.500-5000 m sobre el nivel del mar (con hélices específicas), y en temperaturas tan bajas a -20º
+            utilizando las Baterías de Vuelo Inteligente con autocalentamiento.
+        </div>
+    </div>
+
+    <div class="especificaciones ">
+        <h3>ESPECIFICACIONES</h3><br>
+        <table>
+            <tr>
+                <td>
+                    <h4>Aeronave</h4>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Distancia diagonal entre ejes</td>
+                <td>1133 mm</td>
+            </tr>
+
+
+            <tr>
+                <td>Dimensiones</td>
+                <td>
+                    1668 mm x 1518 mm x 727 mm con las hélices, brazos y el soporte del GPS desplegados (incluyendo el
+                    equipo de aterrizaje)
+                    <br>
+                    437 mm x 402 mm x 553 mm con las hélices, brazos y el soporte del GPS plegados (excluyendo el equipo
+                    de aterrizaje)
+
+                </td>
+            </tr>
+            <tr>
+                <td>Dimensiones del Paquete</td>
+                <td>525 mm × 480 mm × 640 mm</td>
+            </tr>
+            <tr>
+                <td>Peso (con seis baterías TB47S)</td>
+                <td>9.5 kg</td>
+            </tr>
+            <tr>
+                <td>Peso (con seis baterías TB48S)</td>
+                <td>10 kg</td>
+            </tr>
+            <tr>
+                <td>Máximo Peso Recomendado al Despegar</td>
+                <td>15.5 kg</td>
+            </tr>
+            <tr>
+                <td>Precisión de Vuelo Estacionario (P-GPS)</td>
+                <td>Vertical: ±0.5 m, Horizontal: ±1.5 m</td>
+            </tr>
+            <tr>
+                <td>Velocidad Angular Máx</td>
+                <td>Inclinación: 300º/s, Giro: 150°/s</td>
+            </tr>
+            <tr>
+                <td>Ángulo máximo de inclinación</td>
+                <td>25°</td>
+            </tr>
+            <tr>
+                <td>Resistencia al Viento Máx.</td>
+                <td>8 m/s</td>
+            </tr>
+            <tr>
+                <td>Velocidad Máx. en Ascenso</td>
+                <td>5 m/s</td>
+            </tr>
+            <tr>
+                <td>Velocidad Máx. en Descenso</td>
+                <td>3 m/s</td>
+            </tr>
+            <tr>
+                <td>Velocidad Máx.</td>
+                <td>65 km/h / 40 mph (sin viento)</td>
+            </tr>
+            <tr>
+                <td>Altura Max. de Servicio sobre el Nivel del Mar</td>
+                <td>2500 m</td>
+            </tr>
+            <tr>
+                <td>Tiempo en Vuelo Estacionario* (con seis baterías TB47S)</td>
+                <td>Sin carga: 32 min, 6 kg de carga útil: 16 min</td>
+            </tr>
+            <tr>
+                <td>Tiempo en Vuelo Estacionario* (con seis baterías TB48S)</td>
+                <td>Sin carga: 38 min, 6 kg de Carga Útil: 18 min</td>
+            </tr>
+            <tr>
+                <td>Sistema de Control de Vuelo</td>
+                <td>A3 Pro</td>
+            </tr>
+            <tr>
+                <td>Estabilizadores DJI compatibles</td>
+                <td>Ronin-MX; ZENMUSETM Z30, Zenmuse X5/X5R, Zenmuse X3, Zenmuse XT; Zenmuse Z15 Series HD Gimbal:
+                    Z15-A7, Z15-BMPCC, Z15-5D III, Z15-GH4</td>
+            </tr>
+            <tr>
+                <td>Tren de Aterrizaje Retráctil</td>
+                <td>Standard</td>
+            </tr>
+            <tr>
+                <td>Temperatura de funcionamiento</td>
+                <td>de -10° a 40° C (de 14° a 104° F)</td>
+            </tr>
+        </table><br>
+
+        <table>
+            <tr>
+                <td>
+                    <h4>BATERÍA ESTANDAR (Modelo: TB47S)</h4>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Capacidad</td>
+                <td>4500 mAh</td>
+            </tr>
+            <tr>
+                <td>Voltaje</td>
+                <td>22.2 V</td>
+            </tr>
+            <tr>
+                <td>Tipo de Batería</td>
+                <td>LiPo 6S</td>
+            </tr>
+            <tr>
+                <td>Energía</td>
+                <td>99.9 Wh</td>
+            </tr>
+            <tr>
+                <td>Peso Neto</td>
+                <td>595 g</td>
+            </tr>
+            <tr>
+                <td>Temperatura de funcionamiento</td>
+                <td>de -10 a 40 ºC (de 14 a 104 ºF)</td>
+            </tr>
+            <tr>
+                <td>Potencia de Carga Máx</td>
+                <td>180 W</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!--           FOOTER-->
+    <footer>
+        <div>
+            <p><img class="logo-pie" src="../../../Drone-X-Home/images/rsz_1logo2.png"></p>
+        </div>
+        <div class="descrip-pie"><br>12931 Eagle Creek Parkway, Savage, MN 55378<br>info@dron-x.com<br>USA: +1
+            612.293.8317<br><br>Copyright 2020 Drone-X.
+        </div>
+        <div class="sociales-pie">
+            <img class="facebook" src="../../../Drone-X-Home/images/facebook.png" />
+            <img class="instagram" src="../../../Drone-X-Home/images/instagram.png" />
+            <img class="twitter" src="../../../Drone-X-Home/images/twitter.png" />
+        </div>
+    </footer>
+    <!--           //FOOTER-->
+</body>
+
+</html>

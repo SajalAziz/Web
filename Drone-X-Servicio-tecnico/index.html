@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Servicio Tecnico DroneX</title>
+    <link rel="stylesheet" type="text/css" href="../Drone-X-Home/css/index.css">
+     <link rel="icon" type="image/png" href="../Drone-X-Home/images/drone.png">
+     <script type="text/javascript" src="../Drone-X-Home/js/main.js"></script>
+</head>
+
+<body class="container-formulario">
+    <div class="container-servicio">  
+  <form class="contacto" method="post" action="mailto:dronexuem@gmail.com" enctype="text/plain">
+    <h3>Formulario de Servicio Técnico</h3>
+    <h4>Rellene el siguiente formulario para enviar una solicitud de reparación.</h4>
+    <fieldset>
+     <p>Nombre y apellido<b>*</b></p>
+      <input placeholder="Nombre" name="nombre" type="text" tabindex="1" maxlength="70" pattern="[a-Z]+" required>
+    </fieldset>
+    <fieldset>
+     <p>Correo electrónico <b>*</b></p>
+      <input placeholder="Correo electronico"  name="email" type="email" tabindex="2" minlength="20" required>
+    </fieldset>
+    <fieldset>
+     <p>Dirección <b>*</b></p>
+      <input placeholder="Direccion"  name="direccion" type="text" tabindex="3" minlength="20" required>
+    </fieldset>
+    <fieldset>
+     <p>Numero de teléfono <b>*</b></p>
+      <input placeholder="Telefono" name="telf" type="tel" tabindex="4" min="1" max="999999999" pattern="[0-9]+" required>
+    </fieldset>
+    <fieldset>
+     <p>Fecha de la factura original <b>*</b></p>
+      <input placeholder="Fecha factura" name="factura" type="date" tabindex="5" required>
+    </fieldset>
+    <fieldset>
+     <p>Modelo del drón <b>*</b></p>
+      <input placeholder="Nombre de dron" name="nombre-dron" type="text" tabindex="6" maxlength="30" required>
+    </fieldset>
+    <fieldset>
+     <p>Describe el problema</p>
+      <textarea placeholder="Descripcion del problema" name="desc-problema" tabindex="7" maxlength="1000" required></textarea>
+    </fieldset>
+    <fieldset>
+     <p>Elementos a Enviar:</p>
+      <input type="checkbox" name="drone" tabindex="8"> Drone <input type="checkbox" name="baterias" tabindex="9"> Baterías <input type="checkbox" name="mando" tabindex="10"> Mando <input type="checkbox" name="SD" tabindex="11"> Tarjeta SD <input type="checkbox" name="cargador" tabindex="12"> Cargador
+    </fieldset>
+    <fieldset>
+      <button  type="submit" id="submit-formulario">ENVIAR</button>
+    </fieldset>
+  </form>
+ 
+</div>
+</body>
+</html>
